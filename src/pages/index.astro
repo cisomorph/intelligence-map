@@ -1,0 +1,31 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import SectionCard from '../components/SectionCard.astro';
+
+const theoryPosts = [
+  "001 – What Happens When Intelligence Stops Evolving?",
+  "002 – Is Intelligence the Opposite of Chaos?",
+  "003 – Can Systems Think?",
+  "004 – Do Civilizations Dream?"
+];
+
+const collapsePosts = [
+  "101 – The Moment Structures Shatter",
+  "102 – When Systems Refuse to Die",
+  "103 – Collapse as Memory Reset"
+];
+
+const fieldPosts = [
+  "201 – Force Emerges from Recursion",
+  "202 – Spiral Fields in Nature",
+  "203 – The Geometry of Change"
+];
+
+layout: MainLayout;
+---
+<h1 style="text-align:center;">Intelligence Collapse Series</h1>
+<div class="container">
+  <SectionCard title="Intelligence Theory" icon="/icons/theory.png" description="Explore the evolving structure and measurement of intelligence across systems." posts={theoryPosts} />
+  <SectionCard title="Collapse & Emergence" icon="/icons/collapse.png" description="See how belief systems die, structures freeze, and meaning either fades or evolves." posts={collapsePosts} />
+  <SectionCard title="Field Theory" icon="/icons/field.png" description="Discover how recursive structure, adaptability, and force emergence shape reality." posts={fieldPosts} />
+</div>
